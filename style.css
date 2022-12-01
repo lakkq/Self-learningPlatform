@@ -1,0 +1,357 @@
+body {
+  background-color: rgb(213, 213, 213);
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  width: 1000px;
+  margin: 20px;
+  font-family: "Georgia", serif;
+  text-align: left;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 64px;
+  -webkit-text-stroke: 1px black;
+}
+
+h2 {
+  size: 500px;
+  color: white;
+  width: 1000px;
+  margin: 20px;
+  font-family: "Georgia", serif;
+  text-align: left;
+  font-weight: normal;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.site-header {
+  min-width: 450px;
+  height: 150px;
+  background-image: url("img/header-img.jpg");
+  background-size: 1000px;
+  background-color: rgb(16, 99, 177);
+  border-style: groove;
+  border-color: rgb(91, 91, 91);
+  margin: 0 auto;
+}
+
+.site-footer {
+  background-color: rgb(91, 91, 91);
+  text-align: center;
+}
+
+.site-footer p {
+  color: rgb(253, 253, 253);
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+}
+
+.site-courses {
+  background-color: rgb(176, 176, 176);
+  background-image: url(img/site-courses-img.png);
+  background-size: 1250px;
+  margin: 100px;
+  padding: 10px;
+  border-style: groove;
+  border-color: rgb(79, 79, 79);
+  border-radius: 50px;
+}
+
+
+.site-courses p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+  width: 500px;
+  background-color: rgb(79, 79, 79);
+  border-radius: 10px;
+  font-family: "Georgia", serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 1px black;
+}
+
+.heading {
+  align-self: start;
+  text-align: center;
+  background-color: rgb(112, 112, 112);
+  background-image: url(img/header1-img.jpg);
+  -webkit-text-stroke: 1px black;
+  width: 45%;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 7px;
+  font-size: 45px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  
+}
+
+.button {
+  width: 300px;
+  transition: transform .2s;
+  margin: 30px auto;
+  display: block;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.main-table {
+  width: 100%;
+}
+
+.button-open {
+  border: whitesmoke;
+  background-color: #9d9d9d;
+  font-size: 20px;
+  color: aliceblue;
+  text-shadow: 1px 1px 1px #000;
+  font-family: "Georgia", serif;
+  text-align: left;
+  width: 70%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button-close {
+  border: whitesmoke;
+  background-color: #9d9d9d;
+  margin-left: -6px;
+  width: 5%;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  color: aliceblue;
+  cursor: pointer;
+  box-shadow: 5px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.button-open:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+.button-close:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+.lessons {
+  width: fit-content;
+  border-style: groove;
+  border-color: black;
+  margin: 5px;
+  background-color: rgb(172, 172, 172);
+  text-align: left;
+  margin-left: 20px;
+}
+
+.lessons td {
+  border: #000;
+  padding: 5px;
+}
+
+
+.lessons h2 {
+  size: 500px;
+  color: rgb(0, 0, 0);
+  width: 1000px;
+  margin: 20px;
+  font-family: "Georgia", serif;
+  text-align: left;
+  font-weight: normal;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.lessons h3 {
+  size: 500px;
+  color: rgb(0, 0, 0);
+  width: 1000px;
+  margin: 20px;
+  font-family: "Georgia", serif;
+  text-align: left;
+  font-weight: normal;
+  -webkit-text-stroke: 0.5px black;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(150, 150, 150);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #606060;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #151515;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+
+.advertisement {
+  background-color: #606060;
+  margin: 10px;
+  height: 30%;
+}
+
+
+.practice-open {
+  margin: 0;
+  width: 100%;
+  background-color: #9d9d9d;
+  height: 100%;
+  font-size: 20px;
+  color:aliceblue;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+  border: none;
+}
+
+.practice-open img {
+  width: 140px;
+}
+
+.practice-open:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+.practice-close {
+  width: 100%;
+  background-color: #9d9d9d;
+  height: 100%;
+  border: none;
+  font-size: 20px;
+  color:aliceblue;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+}
+
+.b-op {
+  width: 20%;
+}
+
+.b-cl {
+  width: 5%;
+  height: 20px;
+}
+
+.practice-close:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+.practice {
+  width: 80%;
+  margin: 10px;
+  border-collapse: collapse;
+  margin-top: -12px;
+}
+
+.practice td {
+  border: solid black;
+  background-color: #9d9d9d
+} 
+
+.practice p {
+  margin: 0;
+  font-family: "Georgia", serif;
+  text-align: left;
+  font-weight: normal;
+  background-color: #9d9d9d;
+  height: 100%;
+  color: aliceblue;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.begginer thead td {
+  border: solid #000;
+  background-color: #8e8e8e;
+}
+
+.begginer {
+  border-collapse: collapse;
+  width: 77%;
+  margin-left: 25px;
+  margin-top: 0;
+}
+
+.begginer-tasks {
+  border-collapse: collapse;
+  width: 77%;
+  margin-left: 25px;
+  margin-top: 0;
+  
+  background-color: #c5c5c5;
+}
+
+.begginer-tasks td {
+  border: solid #000;
+}
+
+.begginer-tasks p{
+  margin: 0;
+  font-family: "Georgia", serif;
+  text-align: left;
+  font-weight: normal;
+  background-color: #c5c5c5;
+  height: 100%;
+  color: rgb(0, 0, 0);
+}
+
+.task-open {
+  margin-left: 10px;
+  width: 80%;
+  background-color: #c5c5c5;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+  text-align: center;
+  cursor: pointer;
+}
+
+.rez {
+  width: 100%;
+}
+
+li {
+  margin-left: 10px;
+}
